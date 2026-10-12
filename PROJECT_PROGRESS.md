@@ -1,5 +1,14 @@
 # Project Progress - SAM_SQLite (2026-Q4)
 
+## Q4 agent instructions rollout closeout - 2026-10-12
+
+- SAM-BIM/SAM_SQLite#6 merged as `7e45a53dc3a7e3365f01430084c4cd48f45b7326` (merge commit pinned to approved head `fe40b3016a8e96c4e5189da2997fcc43f6bc6dcf`; base `sow/2026-Q4` `b2642239f7267159bdcd5a48ce5e23c17a95e1e7`; validated content `106e9592ed7be26dc218a946effca09a0b1ac6de`). Owner-authorized 2026-10-12 after an independent review (`AGENT_ROLLOUT_REVIEW_2026-10-12.md`, local to the owner's workspace, not committed).
+- Docs only: AGENTS.md, CLAUDE.md, plus the rollout record `documentation/Agent-Continuity-Rollout-Q4.md`. No product code, build, workflow, dependency pin or tool changed; this closeout is the only `PROJECT_PROGRESS.md` change.
+- Validation: local documentation checks and commands are in `documentation/Agent-Continuity-Rollout-Q4.md` (`git diff --check`, file scope, UTF-8/LF/no BOM, import). Hosted checks at the approved head: spdx success (run 38258082581); build success (run 38258082499). Dependency selection: the build log shows no sibling dependency clones.
+- Cleanup: remote docs/agent-instructions-rollout-q4 deleted with an expected-SHA lease on fe40b3016a8e96c4e5189da2997fcc43f6bc6dcf after confirming it is contained in sow/2026-Q4 and no open PR uses it as head or base; the local branch and its worktree are preserved (worktree in use). Other branches, worktrees and the frozen quarters were not touched.
+- Remaining gaps: no agent-client behaviour or token benchmark has been run.
+- Exact next step: Continue from the shared `AGENTS.md`. Open item carried from the pilots: verify on each installed agent client, in a fresh Q4 session, that it follows the instructions without loading the full progress history, and record the result.
+
 ## Branch
 
 `sow/2026-Q4` - bootstrapped 2026-10-06 from `master` `80ab3b68`. Frozen Q3 record: `sow/2026-Q3` @ `c2b56f1e` (not modified).
